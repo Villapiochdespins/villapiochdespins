@@ -1,0 +1,1103 @@
+<!DOCTYPE html>
+<html lang="fr"><head><style id="qw-theme">:root {
+  --color-bg: #faf9fc;
+  --color-text: #131920;
+  --color-navbar-bg: #f9f9fb;
+  --color-bg-chat-view: #fcfcfd;
+  --color-bg-secondary: #fff;
+  --color-bg-tertiary: #f9fafb;
+  --color-bg-hover: #f3f4f6;
+  --color-surface: #f9fafb;
+  --color-surface-hover: #f3f4f6;
+  --color-surface-active: #e5e7eb;
+  --color-border: #0000001f;
+  --color-border-light: #0000000f;
+  --color-border-strong: #d1d5db;
+  --color-primary: #4200db;
+  --color-primary-dark: #35009e;
+  --color-primary-light: #8575ff;
+  --color-primary-bg: #e8e6ff;
+  --color-primary-hover-border: #35009e;
+  --color-nav-icon-active: #4200db;
+  --color-nav-hover-border: #4200db;
+  --color-primary-alpha-3: color-mix(in srgb, #4200db 3%, transparent);
+  --color-primary-alpha-5: color-mix(in srgb, #4200db 5%, transparent);
+  --color-primary-alpha-8: color-mix(in srgb, #4200db 8%, transparent);
+  --color-primary-alpha-12: color-mix(in srgb, #4200db 12%, transparent);
+  --color-primary-alpha-15: color-mix(in srgb, #4200db 15%, transparent);
+  --color-primary-alpha-20: color-mix(in srgb, #4200db 20%, transparent);
+  --color-primary-alpha-25: color-mix(in srgb, #4200db 25%, transparent);
+  --color-primary-alpha-30: color-mix(in srgb, #4200db 30%, transparent);
+  --color-primary-alpha-40: color-mix(in srgb, #4200db 40%, transparent);
+  --color-primary-alpha-50: color-mix(in srgb, #4200db 50%, transparent);
+  --color-primary-alpha-60: color-mix(in srgb, #4200db 60%, transparent);
+  --color-primary-subtle: color-mix(in srgb, #4200db 12%, transparent);
+  --color-primary-border: color-mix(in srgb, #4200db 30%, transparent);
+  --color-focus-ring: color-mix(in srgb, #4200db 50%, transparent);
+  --color-sidebar-hover: color-mix(in srgb, #4200db 12%, transparent);
+  --block-hover-outline: 1px dashed color-mix(in srgb, #4200db 50%, transparent);
+  --block-selected-outline: 1px solid #8575ff;
+  --block-selection-outline-offset: 2px;
+  --block-selected-halo: 0 0 8px color-mix(in srgb, #4200db 40%, transparent);
+  --color-accent: #4200db;
+  --color-accent-foreground: #4200db;
+  --color-accent-dark: #35009e;
+  --color-accent-light: #e8e6ff;
+  --color-accent-inverse: #fff;
+  --color-link: #4200db;
+  --color-primary-gradient-end: #e8e6ff;
+  --color-primary-bg-solid: #e8e6ff;
+  --color-user-bubble: #f3f3f7;
+  --color-user-bubble-text: #131920;
+  --color-text-secondary: #5e5e5e;
+  --color-text-tertiary: #656871;
+  --color-text-muted: #9ca3af;
+  --color-text-on-primary: #fff;
+  --color-success: #00802f;
+  --color-success-dark: #00471e;
+  --color-success-light: #d9ffd6;
+  --color-success-hover: #005c26;
+  --color-success-bg: #e6f5eb;
+  --color-success-border: #b3d9bf;
+  --color-success-foreground: #00802f;
+  --color-success-dark-foreground: #00471e;
+  --color-success-text: #00471e;
+  --color-error: #db0000;
+  --color-error-dark: #700000;
+  --color-error-light: #ffe0e0;
+  --color-error-hover: #ffe0e0;
+  --color-error-bg: #fceaea;
+  --color-error-border: #f2cccc;
+  --color-error-active-border: #db0000;
+  --color-error-foreground: #db0000;
+  --color-error-dark-foreground: #700000;
+  --color-error-inverse: #fff;
+  --color-error-text: #700000;
+  --color-warning: #f2b100;
+  --color-warning-dark: #573a00;
+  --color-warning-light: #fffbbd;
+  --color-warning-hover: #db9200;
+  --color-warning-bg: #fef7e6;
+  --color-warning-border: #f9dfa3;
+  --color-warning-foreground: #f2b100;
+  --color-warning-dark-foreground: #573a00;
+  --color-warning-inverse: #573a00;
+  --color-surface-warning: #fffbbd;
+  --color-text-warning: #573a00;
+  --color-info: #006ce0;
+  --color-info-dark: #002a66;
+  --color-info-light: #d1f1ff;
+  --color-info-hover: #003b8f;
+  --color-info-bg: #ebf3fc;
+  --color-info-border: #b3d1f0;
+  --color-info-foreground: #006ce0;
+  --color-info-dark-foreground: #002a66;
+  --color-info-inverse: #fff;
+  --color-overlay: #00000080;
+  --color-shadow: #00000014;
+  --color-hover: #0000000d;
+  --color-tooltip-bg: #000000d9;
+  --color-tooltip-text: #fff;
+  --color-voice-purple: #8575ff;
+  --color-voice-purple-dark: #4200db;
+  --color-voice-purple-light: #8575ff;
+  --color-voice-red: #db0000;
+  --color-voice-red-dark: #700000;
+  --color-voice-amber: #f2b100;
+  --color-voice-purple-glow: #4200db66;
+  --color-voice-red-glow: #db000066;
+  --font-sans: "Amazon Ember", "Helvetica Neue", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-mono: "SF Mono", "Monaco", "Menlo", "Consolas", monospace;
+  --text-2xs: .5625rem;
+  --text-xs: .625rem;
+  --text-sm: .6875rem;
+  --text-base: .75rem;
+  --text-md: .8125rem;
+  --text-lg: .875rem;
+  --text-xl: 1rem;
+  --text-2xl: 1.125rem;
+  --text-3xl: 1.25rem;
+  --text-4xl: 1.5rem;
+  --text-5xl: 2rem;
+  --spacing-1: calc(.25rem * 1);
+  --spacing-1-5: calc(.25rem * 1.5);
+  --spacing-2: calc(.25rem * 2);
+  --spacing-3: calc(.25rem * 3);
+  --spacing-4: calc(.25rem * 4);
+  --spacing-5: calc(.25rem * 5);
+  --spacing-6: calc(.25rem * 6);
+  --spacing-7: calc(.25rem * 7);
+  --spacing-8: calc(.25rem * 8);
+  --spacing-9: calc(.25rem * 9);
+  --spacing-10: calc(.25rem * 10);
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-card: 12px;
+  --radius-lg: 16px;
+  --radius-pill: 8px;
+  --shadow-sm: 0 1px 2px #0000000d;
+  --shadow-md: 0 4px 12px #00000014;
+  --color-success-bg-solid: #d9ffd6;
+  --color-error-bg-solid: #ffe0e0;
+  --color-error-border-solid: #ffe0e0;
+  --color-warning-bg-solid: #fffbbd;
+  --color-warning-text: #573a00;
+  --color-info-bg-solid: #d1f1ff;
+  --color-info-bg-solid-alt: #d1f1ff;
+  --color-info-text: #002a66;
+  --color-info-text-alt: #002a66;
+  --color-emerald: #10b981;
+  --color-teal: #4ecdc4;
+  --color-code-bg: #f3f3f7;
+  --color-code-header-bg: #f1f3f5;
+  --color-code-text: #24292e;
+  --color-code-border: #e1e4e8;
+  --color-code-muted: #6a737d;
+  --color-inline-code-bg: #f3f3f7;
+  --color-inline-code-text: #24292e;
+  --color-inline-code-border: #e1e4e8;
+  --color-scrollbar-thumb: #d1d5db;
+  --color-scrollbar-track: transparent;
+  --color-graph-node-text: #333;
+  --color-graph-node-text-dim: #7f8c8d;
+  --color-graph-edge-default: #95a5a6;
+  --color-graph-edge-cross: #e67e22;
+  --color-graph-edge-text: #666;
+  --color-graph-edge-stroke: #fff;
+  --color-graph-highlight-bg: #ff6b6b;
+  --color-graph-highlight-border: #e74c3c;
+  --color-graph-search-bg: gold;
+  --color-graph-search-border: orange;
+  --color-graph-focus-border: #c0392b;
+  --color-graph-external-border: #95a5a6;
+  --color-graph-cat-file: #3498db;
+  --color-graph-cat-folder: #7f8c8d;
+  --color-graph-cat-file-aggregate: #2980b9;
+  --color-graph-cat-class: #9b59b6;
+  --color-graph-cat-function: #2ecc71;
+  --color-graph-cat-method: #1abc9c;
+  --color-graph-cat-variable: #f39c12;
+  --color-graph-cat-import: #d35400;
+  --color-graph-cat-module: #5b6abf;
+  --color-graph-cat-concept: #e74c3c;
+  --color-graph-cat-person: #ff6b6b;
+  --color-graph-cat-org: #4ecdc4;
+  --color-graph-cat-organization: #4ecdc4;
+  --color-graph-cat-product: #a29bfe;
+  --color-graph-cat-metric: #fd79a8;
+  --color-graph-cat-location: #34495e;
+  --color-graph-cat-date: #e056a0;
+  --color-graph-cat-code: #3498db;
+  --color-graph-cat-doc: #7f8c8d;
+  --color-graph-cat-url: #00b894;
+  --color-graph-cat-email: #6c5ce7;
+  --color-graph-cat-unknown: #bdc3c7;
+  --color-graph-rel-contains: #bdc3c7;
+  --color-graph-rel-extends: #9b59b6;
+  --color-graph-rel-implements: #3498db;
+  --color-graph-rel-imports: #e67e22;
+  --color-graph-rel-uses: #2ecc71;
+  --color-graph-rel-calls: #27ae60;
+  --color-graph-rel-references: #f39c12;
+  --color-graph-rel-related-to: #95a5a6;
+  --color-graph-rel-works-on: #e74c3c;
+  --color-graph-rel-owns: #1abc9c;
+  --color-graph-rel-depends-on: #e67e22;
+  --color-graph-rel-parent-of: #bdc3c7;
+  --qs-content: #fff;
+  --qs-main: #fff;
+  --qs-primary-foreground: #131920;
+  --qs-secondary-foreground: #656871;
+  --qs-tertiary-foreground: #9ca3af;
+  --qs-placeholder-foreground: #8c8c94;
+  --qs-divider: #dedee3;
+  --qs-default-border: #8c8c94;
+  --qs-neutral-soft: #b4b4bb;
+  --qs-neutral-gray-50: #f9fafb;
+  --qs-tertiary-background: #f9fafb;
+  --qs-action-hover: #f3f3f7;
+  --qs-primary-default: #4200db;
+  --qs-primary-dark: #35009e;
+  --qs-primary-light: #e8e6ff;
+  --qs-success-default: #00802f;
+  --qs-error-default: #db0000;
+  --qs-font-sans: "Amazon Ember", "Helvetica Neue", "Segoe UI", Helvetica, Arial, sans-serif;
+  --safe-top: 0px;
+  --safe-bottom: 0px;
+  --safe-left: 0px;
+  --safe-right: 0px;
+  --qs-font-family: "Amazon Ember", "Helvetica Neue", "Segoe UI", Helvetica, Arial, sans-serif;
+  --qs-font-base-letter-spacing: .15px;
+  --qs-shadow-sm: 0 0 2px 0 #00000029, 0 0 4px 0 #00000029;
+  --qs-shadow-md: 0 0 2px 0 #00000029, 0 2px 8px 1px #00000029;
+  --qs-shadow-lg: 0 4px 16px 4px #00000029, 0 2px 6px 1px #00000029;
+  --qs-shadow-xl: 0 4px 8px 2px #00000029, 0 6px 20px 4px #00000029;
+  --qs-width-modal-sm: 384px;
+  --qs-width-modal-md: 600px;
+  --qs-width-modal-lg: 1136px;
+  --qs-grid-gap: 16px;
+  --qs-grid-gap-xl: 24px;
+  --qs-primary-medium: #8575ff;
+  --qs-primary-inverse: #fff;
+  --qs-neutral-lightest: #f9f9fb;
+  --qs-neutral-light: #f3f3f7;
+  --qs-neutral-default: #dedee3;
+  --qs-neutral-medium: #8c8c94;
+  --qs-neutral-deep: #656871;
+  --qs-neutral-dark: #333843;
+  --qs-neutral-strong: #131920;
+  --qs-neutral-white: #fff;
+  --qs-neutral-black: #000;
+  --qs-success-medium: #005c26;
+  --qs-success-dark: #00471e;
+  --qs-success-light: #d9ffd6;
+  --qs-success-inverse: #fff;
+  --qs-info-default: #006ce0;
+  --qs-info-medium: #003b8f;
+  --qs-info-dark: #002a66;
+  --qs-info-light: #d1f1ff;
+  --qs-info-inverse: #fff;
+  --qs-warning-default: #f2b100;
+  --qs-warning-medium: #db9200;
+  --qs-warning-dark: #573a00;
+  --qs-warning-light: #fffbbd;
+  --qs-warning-inverse: #573a00;
+  --qs-warning-experimental: #f2b100;
+  --qs-warning-experimental-light: #fffbbd;
+  --qs-warning-experimental-light-foreground: #fffbbd;
+  --qs-error-medium: #900;
+  --qs-error-dark: #700000;
+  --qs-error-light: #ffe0e0;
+  --qs-error-inverse: #fff;
+  --qs-connection-default: #db3300;
+  --qs-connection-soft: #ff997a;
+  --qs-connection-light: #ffe0d6;
+  --qs-connection-dark: #661800;
+  --qs-automation-default: #b3008f;
+  --qs-automation-medium: #d600ba;
+  --qs-automation-soft: #ff94f1;
+  --qs-automation-light: #ffe0fb;
+  --qs-automation-dark: #660052;
+  --qs-insight-default: #a000b8;
+  --qs-insight-soft: #f299ff;
+  --qs-insight-light: #fce6ff;
+  --qs-insight-dark: #590066;
+  --qs-visualization-default: #7300e5;
+  --qs-visualization-soft: #d4a8ff;
+  --qs-visualization-light: #f2e5ff;
+  --qs-visualization-dark: #45008a;
+  --qs-spice: #ff9800;
+  --qs-coachmark: #006ce0;
+  --qs-brand: #fff;
+  --qs-brand-foreground: #131920;
+  --qs-brand-navbar: #131920;
+  --qs-brand-navbar-foreground: #fff;
+  --qs-brand-navbar-light: #dedee3;
+  --qs-brand-navbar-dark: #000;
+  --qs-application-navbar: #4200db;
+  --qs-application-navbar-foreground: #fff;
+  --qs-application-navbar-light: #e8e6ff;
+  --qs-application-navbar-dark: #35009e;
+  --qs-dimension: #4200db;
+  --qs-dimension-foreground: #fff;
+  --qs-dimension-experimental: #4200db;
+  --qs-dimension-experimental-foreground: #4200db;
+  --qs-measure: #00802f;
+  --qs-measure-foreground: #fff;
+  --qs-measure-experimental: #f2b100;
+  --qs-measure-experimental-foreground: #f2b100;
+  --qs-content-inverse: #333843;
+  --qs-content-inverse-active: #131920;
+  --qs-secondary: #dedee3;
+  --qs-disabled: #8c8c94;
+  --qs-divider-light: #f3f3f7;
+  --qs-hover-border: #333843;
+  --qs-active-border: #4200db;
+  --qs-disabled-border: #dedee3;
+  --qs-error-border: #ffe0e0;
+  --qs-error-active-border: #db0000;
+  --qs-disabled-foreground: #b4b4bb;
+  --qs-primary-inverse-foreground: #fff;
+  --qs-error-foreground: #db0000;
+  --qs-contrast-foreground: #131920;
+  --qs-main-foreground: #131920;
+  --qs-main-secondary-foreground: #656871;
+  --qs-action-disabled: #f3f3f7;
+  --qs-action-active: #e8e6ff;
+  --qs-default-badge: #dedee3;
+  --qs-tag-default: #dedee3;
+  --qs-tag-soft-border: #b4b4bb;
+  --qs-focus-offset: 1px;
+  --qs-toggle-tile-sm: calc(.25rem * 8);
+  --qs-toggle-tile-md: calc(.25rem * 12);
+  --qs-toggle-tile-lg: calc(.25rem * 15);
+  --qs-shadow-pin-right: inset 4px 0 4px -4px #00000029;
+  --qs-shadow-pin-left: inset -4px 0 4px -4px #00000029;
+  --react-pdf-text-layer: 1;
+  --highlight-bg-color: #b400aa;
+  --highlight-selected-bg-color: #006400;
+  --react-pdf-annotation-layer: 1;
+  --annotation-unfocused-field-background: url("data:image/svg+xml;charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13);'/></svg>");
+  --input-focus-border-color: Highlight;
+  --input-focus-outline: 1px solid Canvas;
+  --input-unfocused-border-color: transparent;
+  --input-disabled-border-color: transparent;
+  --input-hover-border-color: black;
+  --link-outline: none;
+  color-scheme: light;
+}
+body { background: var(--color-bg); color: var(--color-text); }
+a { color: var(--color-link, var(--color-primary)); }</style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Villa Pioch des Pins — Aniane, Hérault</title>
+<meta name="google-site-verification" content="Jp6XfTr5UqafH7tpknKq_rU3ZtiANNfL_-7w4BotvNw">
+<meta name="description" content="Villa Pioch des Pins à Aniane : piscine privée, jardin clos de 3000 m², vue panoramique sur la garrigue. Location saisonnière à 15 min de Saint-Guilhem.">
+<meta property="og:title" content="Villa Pioch des Pins — Aniane, Hérault">
+<meta property="og:description" content="Villa avec piscine privée, jardin clos de 3000 m² et vue panoramique. 3 chambres climatisées, 10 couchages. Aniane, Hérault.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:url" content="https://villapiochdespins.fr/">
+<meta property="og:image" content="https://villapiochdespins.fr/images/villa-pioch-des-pins-piscine.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="Villa Pioch des Pins">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Villa Pioch des Pins — Aniane, Hérault">
+<meta name="twitter:description" content="Villa avec piscine, jardin clos de 3000 m² et vue panoramique. 3 chambres climatisées, jusqu'à 10 couchages. À 15 min de Saint-Guilhem-le-Désert.">
+<meta name="twitter:image" content="https://villapiochdespins.fr/images/villa-pioch-des-pins-piscine.jpg">
+<link rel="canonical" href="https://villapiochdespins.fr/">
+<link rel="sitemap" type="application/xml" href="/sitemap.xml">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Villa Pioch des Pins — Amandine">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&amp;family=Work+Sans:wght@300;400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" as="style">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&amp;family=Work+Sans:wght@300;400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+:root{--pine-950:#1e2a19;--pine-800:#2c3b24;--pine-700:#3c4f33;--gold-600:#a17d24;--gold-500:#b8912f;--gold-300:#dcb968;--stone-100:#f3efe2;--stone-200:#ece4d1;--ink-900:#23261c;--cream:#fbf8f1;--line:rgba(30,42,25,0.14);--display:"Playfair Display",serif;--body:"Work Sans",sans-serif;--mono:"JetBrains Mono",monospace;}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:var(--body);color:var(--ink-900);background:var(--cream);line-height:1.7;-webkit-font-smoothing:antialiased;}
+img{max-width:100%;display:block;transition:transform 0.3s ease;}
+a{color:inherit;text-decoration:none;}
+h1,h2,h3{font-family:var(--display);font-weight:500;letter-spacing:-0.01em;}
+.eyebrow{font-family:var(--mono);font-size:0.72rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold-600);display:flex;align-items:center;gap:0.6rem;margin-bottom:1rem;}
+.eyebrow::before{content:"";width:22px;height:1px;background:var(--gold-600);display:inline-block;}
+.wrap{max-width:1180px;margin:0 auto;padding:0 6vw;}
+section{padding:7.5rem 0;}
+@media(max-width:720px){section{padding:5rem 0;}}
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .9s ease,transform .9s ease;}
+.reveal.in{opacity:1;transform:translateY(0);}
+header.site{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:1.2rem 5vw;transition:background .4s,padding .4s,box-shadow .4s;}
+header.site.scrolled{background:rgba(251,248,241,0.95);backdrop-filter:blur(10px);padding:0.8rem 5vw;box-shadow:0 1px 0 var(--line);}
+.brand{display:flex;align-items:center;gap:0.7rem;}
+.brand-logo{width:36px;height:36px;border-radius:50%;background:var(--gold-500);display:flex;align-items:center;justify-content:center;font-family:var(--display);font-size:1rem;font-weight:600;color:#fff;}
+.brand-text{font-family:var(--display);font-size:1.15rem;font-weight:600;color:#fff;}
+header.site.scrolled .brand-text{color:var(--pine-950);}
+header.site:not(.scrolled) nav a,header.site:not(.scrolled) nav button{color:rgba(255,255,255,0.92);border-color:rgba(255,255,255,0.7);}
+header.site.scrolled nav a{color:var(--pine-950);}
+nav{display:flex;gap:1.6rem;align-items:center;}
+nav a.navlink{font-size:0.82rem;letter-spacing:0.02em;}
+nav a.navlink:hover{color:var(--gold-500);}
+.btn{font-family:var(--mono);font-size:0.7rem;letter-spacing:0.09em;text-transform:uppercase;padding:0.8rem 1.4rem;border-radius:2px;display:inline-flex;align-items:center;gap:0.6rem;transition:background .3s,color .3s,transform .2s;border:1px solid currentColor;}
+.btn-gold{background:var(--gold-500);color:var(--pine-950);border-color:var(--gold-500);box-shadow:0 2px 8px rgba(184,145,47,0.3);}
+.btn-gold:hover{background:var(--gold-300);transform:translateY(-1px);}
+.btn-outline{color:#fff;border-color:rgba(255,255,255,0.6);}
+.btn-outline:hover{background:rgba(255,255,255,0.12);}
+.hero{position:relative;height:100svh;min-height:620px;color:#fff;display:flex;align-items:flex-end;background:linear-gradient(180deg,rgba(30,42,25,0.20) 0%,rgba(20,28,16,0.05) 30%,rgba(15,20,12,0.75) 100%),url('images/Photo%20Airbnb_Ext_01.png') center/cover no-repeat;}
+.hero-inner{padding-bottom:0.3rem;width:100%;}
+.hero .eyebrow{color:#fff;opacity:0.95;}
+.hero .eyebrow::before{background:#fff;}
+.hero h1{font-size:clamp(2.4rem,6vw,4.6rem);line-height:1.08;max-width:22ch;font-weight:400;color:#fff;margin-top:0.6rem;text-shadow:0 2px 20px rgba(0,0,0,0.3);}
+.hero h1 em{font-style:italic;color:var(--gold-300);font-weight:400;}
+.hero p.lede{margin-top:1rem;max-width:72ch;font-size:1rem;font-weight:300;color:rgba(255,255,255,0.88);}
+.hero-cta{display:flex;gap:1rem;flex-wrap:wrap;}
+.hero-stats{display:flex;gap:2rem;align-items:flex-end;}
+@media(max-width:860px){.hero-stats{display:none;}}
+.hstat{font-family:var(--mono);font-size:0.68rem;text-align:right;color:rgba(255,255,255,0.85);}
+.hstat b{display:block;font-family:var(--display);font-size:1.8rem;font-weight:400;color:#fff;}
+.scroll-cue{display:none;display:flex;align-items:center;gap:0.7rem;color:rgba(255,255,255,0.75);font-family:var(--mono);font-size:0.68rem;letter-spacing:0.1em;}
+.scroll-cue .line{width:1px;height:34px;background:rgba(255,255,255,0.5);position:relative;overflow:hidden;}
+.scroll-cue .line::after{content:"";position:absolute;top:-100%;left:0;width:100%;height:100%;background:var(--gold-300);animation:cue 2.2s ease-in-out infinite;}
+@keyframes cue{0%{top:-100%;}60%{top:100%;}100%{top:100%;}}
+.badges{display:flex;gap:1.8rem;margin-top:1rem;flex-wrap:wrap;}
+.badge-item{display:flex;align-items:center;gap:0.5rem;font-size:0.82rem;color:rgba(255,255,255,0.92);font-weight:300;}
+.badge-item svg{width:18px;height:18px;color:var(--gold-300);flex-shrink:0;}
+.map-section{background:var(--stone-100);padding:4rem 0;}
+.map-section img{width:100%;height:450px;object-fit:cover;border-radius:4px;box-shadow:0 2px 16px rgba(0,0,0,0.08);background:var(--stone-200);}
+.intro{background:var(--stone-100);}
+.intro-grid{display:grid;grid-template-columns:0.9fr 1.1fr;gap:5vw;align-items:start;}
+@media(max-width:860px){.intro-grid{grid-template-columns:1fr;}}
+.intro h2{font-size:clamp(1.8rem,3.4vw,2.6rem);font-weight:400;color:var(--pine-950);line-height:1.18;}
+.intro-text p{max-width:56ch;margin-top:1.3rem;color:var(--pine-800);font-weight:300;text-align:justify;}
+.intro-text p+p{margin-top:1rem;}
+.gallery-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:0.6rem;margin-top:3.2rem;}
+.gallery-grid img{width:100%;height:100%;object-fit:cover;border-radius:2px;}
+.g1{grid-column:span 4;grid-row:span 2;}.g2{grid-column:span 2;}.g3{grid-column:span 2;}.g4{grid-column:span 3;}.g5{grid-column:span 3;}
+@media(max-width:720px){.gallery-grid{grid-template-columns:repeat(2,1fr);}.g1{grid-column:span 2;grid-row:span 1;}.g2,.g3,.g4,.g5{grid-column:span 1;}}
+.rooms{background:var(--cream);padding:5rem 0;}
+.room-list{margin-top:3rem;border-top:1px solid var(--line);}
+.room-row{display:grid;grid-template-columns:0.4fr 2.2fr 1.4fr;gap:2rem;align-items:center;padding:2.5rem 0;border-bottom:1px solid var(--line);}
+@media(max-width:760px){.room-row{grid-template-columns:1fr;gap:0.8rem;}}
+.room-num{font-family:var(--mono);font-size:0.78rem;color:var(--gold-600);}
+.room-imgs{display:flex;gap:0.6rem;}
+.room-imgs img{width:50%;height:auto;aspect-ratio:4/3;object-fit:cover;border-radius:4px;}
+.room-row h3{font-size:1.2rem;font-weight:500;color:var(--pine-950);font-family:var(--body);}
+.room-row p{font-size:0.9rem;color:var(--pine-800);font-weight:300;margin-top:0.3rem;}
+.jardin{background:var(--pine-950);color:var(--stone-100);}
+.jardin .eyebrow{color:var(--gold-300);}.jardin .eyebrow::before{background:var(--gold-300);}
+.jardin h2{color:#fff;font-size:clamp(1.8rem,3.2vw,2.4rem);font-weight:400;max-width:24ch;}
+.jardin-desc{margin-top:2rem;font-size:0.95rem;color:rgba(243,239,226,0.85);font-weight:300;max-width:85ch;line-height:1.8;}
+.jardin-desc strong{color:var(--gold-300);font-weight:500;}
+.ext-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0.6rem;margin-top:3rem;}
+.ext-grid img{width:100%;height:260px;object-fit:cover;border-radius:3px;}
+.ext-grid .ext-wide{grid-column:span 2;}
+.ext-divider{grid-column:1/-1;padding:1.5rem 0 0.5rem;font-family:var(--mono);font-size:0.7rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold-300);border-top:1px solid rgba(220,185,104,0.3);margin-top:0.5rem;}
+@media(max-width:720px){.ext-grid{grid-template-columns:1fr;}.ext-grid .ext-wide{grid-column:span 1;}.ext-grid img{height:200px;}}
+.equipements{background:var(--stone-100);}
+.equip-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2.5rem;margin-top:3rem;}
+@media(max-width:860px){.equip-grid{grid-template-columns:repeat(2,1fr);}}
+@media(max-width:560px){.equip-grid{grid-template-columns:1fr;}}
+.equip-group{background:#fff;padding:1.8rem;border-radius:6px;box-shadow:0 2px 12px rgba(30,42,25,0.06);}.equip-group h3{font-size:1rem;font-weight:600;color:var(--pine-950);margin-bottom:0.8rem;font-family:var(--body);}
+.equip-group ul{list-style:none;padding:0;}
+.equip-group li{font-size:0.88rem;color:var(--pine-800);font-weight:300;padding:0.35rem 0;border-bottom:1px solid var(--line);}
+.equip-group li:last-child{border-bottom:none;}
+.around{background:var(--cream);}
+.around-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);margin-top:3rem;border:1px solid var(--line);}
+@media(max-width:860px){.around-grid{grid-template-columns:repeat(2,1fr);}}
+.around-cell{background:var(--cream);padding:2.4rem 2rem;min-height:210px;display:flex;flex-direction:column;justify-content:space-between;}
+.around-cell .dist{font-family:var(--mono);font-size:0.72rem;color:var(--gold-600);}
+.around-cell h3{font-size:1.05rem;font-weight:500;color:var(--pine-950);margin-top:1.4rem;font-family:var(--body);}
+.around-cell p{font-size:0.84rem;color:var(--pine-800);font-weight:300;margin-top:0.4rem;}
+.around-gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:0.6rem;margin-top:2.5rem;}
+.around-gallery img{width:100%;height:220px;object-fit:cover;border-radius:4px;}
+@media(max-width:720px){.around-gallery{grid-template-columns:1fr;}.around-gallery img{height:180px;}}
+.reviews{background:var(--pine-700);color:var(--stone-100);}
+.reviews .eyebrow{color:var(--gold-300);}.reviews .eyebrow::before{background:var(--gold-300);}
+.review-head{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:1.5rem;}
+.review-head h2{color:#fff;font-size:clamp(1.8rem,3.2vw,2.4rem);font-weight:400;}
+.rating-badge{font-family:var(--mono);text-align:right;}
+.rating-badge b{font-family:var(--display);font-size:2.6rem;color:var(--gold-300);font-weight:400;display:block;}
+.review-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;margin-top:3.2rem;}
+@media(max-width:860px){.review-grid{grid-template-columns:1fr;}}
+.review-card{border-top:1px solid rgba(243,239,226,0.25);padding-top:1.4rem;}
+.review-card .stars{color:var(--gold-300);letter-spacing:0.15em;font-size:0.85rem;}
+.review-card p{margin-top:1rem;font-weight:300;font-size:0.94rem;color:rgba(243,239,226,0.92);}
+.contact-section{background:var(--stone-200);text-align:center;padding:5rem 0;}
+.contact-section h2{font-size:clamp(2rem,4.4vw,3.1rem);color:var(--pine-950);font-weight:400;margin:0 auto;}
+.contact-section>.wrap>p{margin-top:0.8rem;color:var(--pine-800);font-weight:300;font-size:1.05rem;}
+.contact-card{display:inline-block;margin-top:2.5rem;background:#fff;border-radius:6px;padding:1.6rem 2.2rem;box-shadow:0 4px 24px rgba(30,42,25,0.08);text-align:left;}
+.contact-name{font-family:var(--display);font-size:1.1rem;color:var(--pine-950);font-weight:500;margin-bottom:0.8rem;}
+.contact-details{display:flex;flex-direction:column;gap:0.9rem;}
+.contact-line{display:flex;align-items:center;gap:0.6rem;font-size:0.9rem;color:var(--pine-800);font-weight:400;transition:color .2s;}
+.contact-line:hover{color:var(--gold-600);}
+.contact-line svg{color:var(--gold-500);flex-shrink:0;}
+footer{background:var(--pine-950);color:rgba(243,239,226,0.75);padding:4rem 0 2rem;}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:3rem;}
+@media(max-width:760px){.foot-grid{grid-template-columns:1fr;gap:2rem;}}
+footer h3{font-family:var(--display);color:#fff;font-size:1.4rem;font-weight:400;}
+footer p{font-size:0.86rem;font-weight:300;margin-top:0.9rem;max-width:46ch;}
+footer .foot-label{font-family:var(--mono);font-size:0.68rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--gold-300);margin-bottom:0.9rem;}
+footer a.footlink{display:block;font-size:0.9rem;margin-top:0.6rem;color:rgba(243,239,226,0.85);}
+footer a.footlink:hover{color:var(--gold-300);}
+.foot-bottom{margin-top:3.5rem;padding-top:1.5rem;border-top:1px solid rgba(243,239,226,0.15);font-family:var(--mono);font-size:0.68rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;}
+@media(max-width:760px){.contact-section [style*='grid-template-columns:repeat(3']{grid-template-columns:1fr!important;}}
+
+.lightbox{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.92);z-index:1000;align-items:center;justify-content:center;cursor:zoom-out;padding:2rem;}
+.lightbox img{max-width:92vw;max-height:92vh;object-fit:contain;border-radius:4px;box-shadow:0 8px 40px rgba(0,0,0,0.4);}
+.lightbox-close{position:absolute;top:1.5rem;right:2rem;color:#fff;font-size:2rem;cursor:pointer;font-family:var(--body);opacity:0.8;}
+.lightbox-close:hover{opacity:1;}
+
+
+
+.gallery-grid img:hover,.ext-grid img:hover,.around-gallery img:hover,.room-imgs img:hover{transform:scale(1.02);}
+.burger{display:none;}
+@media(max-width:860px){nav{position:fixed;top:0;right:0;height:100vh;width:82vw;max-width:340px;background:var(--pine-950);flex-direction:column;align-items:flex-start;padding:6.5rem 2rem 2rem;gap:1.4rem;transform:translateX(100%);transition:transform .4s;z-index:55;}nav.open{transform:translateX(0);}nav a{color:#fff!important;}#langToggle{color:#fff!important;border-color:#fff!important;}.burger{display:flex;flex-direction:column;gap:5px;z-index:60;background:none;border:none;cursor:pointer;padding:0.8rem;min-width:44px;min-height:44px;justify-content:center;align-items:center;}.burger span{width:24px;height:2px;background:#fff;transition:background .3s;}header.site.scrolled .burger span{background:var(--pine-950);}}
+
+
+/* ===== MOBILE OPTIMIZATIONS ===== */
+
+/* Overlay behind mobile nav */
+.nav-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.5);z-index:40;opacity:0;pointer-events:none;transition:opacity .3s;}
+.nav-overlay.active{opacity:1;pointer-events:auto;}
+body.nav-open{overflow:hidden;}
+
+@media(max-width:860px){
+  /* Burger always visible */
+  .burger{display:flex!important;}
+  
+  /* Nav mobile improvements */
+  nav .btn.btn-gold{width:100%;text-align:center;justify-content:center;padding:1rem 1.4rem;margin-top:0.5rem;font-size:0.8rem;}
+  nav #langToggle{margin-top:0.5rem;}
+}
+
+@media(max-width:600px){
+  /* Hero adjustments */
+  .hero{min-height:100svh;align-items:flex-end;}
+  .hero-inner{padding-bottom:2rem;}
+  .hero h1{font-size:clamp(1.5rem,6.8vw,2.2rem);line-height:1.15;max-width:100%;}
+  .hero p.lede{font-size:0.85rem;line-height:1.55;max-width:100%;}
+  br.hide-mobile{display:none;}
+  
+  /* Badges stack vertically */
+  .badges{flex-direction:column;gap:0.8rem;margin-top:1.2rem;}
+  
+  /* CTA buttons full width */
+  .hero-cta{flex-direction:column;gap:0.8rem;width:100%;}
+  .hero-cta .btn{width:100%;justify-content:center;text-align:center;padding:1rem 1.4rem;}
+  
+  /* Section padding reduced */
+  section{padding:3.5rem 0!important;}
+  
+  /* Wrap padding increased */
+  .wrap{padding:0 1.2rem!important;}
+  
+  /* h2 smaller on mobile */
+  h2{font-size:clamp(1.4rem,6vw,1.8rem)!important;line-height:1.2;}
+  
+  /* Eyebrow */
+  .eyebrow{font-size:0.65rem;}
+  
+  /* Section headers with better spacing */
+  .section-head{margin-bottom:2rem;}
+  .section-head p{font-size:0.9rem;}
+}
+
+@media(max-width:380px){
+  /* Extra small phones */
+  .hero h1{font-size:clamp(1.35rem,6vw,1.6rem);max-width:100%;}
+  .wrap{padding:0 1rem!important;}
+  h2{font-size:1.3rem!important;}
+  .btn{font-size:0.65rem;padding:0.7rem 1rem;}
+}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VacationRental",
+  "name": "Villa Pioch des Pins",
+  "description": "Villa avec piscine privée et jardin clos de 3000 m² à Aniane, Hérault. 3 chambres climatisées, jusqu\'à 10 couchages.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Aniane",
+    "addressRegion": "Hérault",
+    "addressCountry": "FR"
+  },
+  "numberOfRooms": 3,
+  "occupancy": {
+    "@type": "QuantitativeValue",
+    "maxValue": 10
+  },
+  "amenityFeature": [
+    {"@type": "LocationFeatureSpecification", "name": "Piscine privée"},
+    {"@type": "LocationFeatureSpecification", "name": "Climatisation"},
+    {"@type": "LocationFeatureSpecification", "name": "Wi-Fi"},
+    {"@type": "LocationFeatureSpecification", "name": "Parking"},
+    {"@type": "LocationFeatureSpecification", "name": "Animaux acceptés"},
+    {"@type": "LocationFeatureSpecification", "name": "Jardin clos 3000 m²"}
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "bestRating": "5",
+    "ratingCount": "3"
+  }
+}
+</script>
+</head>
+<body>
+<header class="site" id="siteHeader">
+  <a href="#top" class="brand"><img class="brand-logo" src="images/logo.png" alt="Logo Villa Pioch des Pins" style="width:36px;height:36px;border-radius:50%;object-fit:cover;background:transparent;"><span class="brand-text">Villa Pioch des Pins</span></a>
+  <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  <nav id="nav" role="navigation" aria-label="Menu principal">
+    <a class="navlink" href="#villa">La villa</a>
+    <a class="navlink" href="#jardin">Le jardin</a>
+    <a class="navlink" href="#equipements">Équipements</a>
+    <a class="navlink" href="#visiter">À visiter</a>
+    <a class="navlink" href="#avis">Avis</a>
+    <a class="navlink" href="#contact">Contact</a>
+    <a class="btn btn-gold" href="https://www.airbnb.fr/rooms/1521744503764002885" target="_blank" rel="noopener"><span data-fr="Vérifier les disponibilités" data-en="Check availability">Vérifier les disponibilités</span></a>
+    <button id="langToggle" class="navlink" style="font-family:var(--mono);font-size:0.72rem;letter-spacing:0.06em;background:none;border:1px solid currentColor;padding:0.5rem 0.8rem;border-radius:2px;cursor:pointer;transition:color .4s,border-color .4s;">EN</button>
+  </nav>
+</header>
+<div class="nav-overlay" id="navOverlay"></div>
+
+<section class="hero" id="top">
+
+  <div class="wrap hero-inner">
+    <div class="eyebrow">Aniane · Hérault · Occitanie</div>
+    <h1><span style="white-space:nowrap;">Une villa sur les hauteurs,</span><br><em>entre pins et garrigue</em></h1>
+    <p class="lede">Piscine privée, grand jardin clos et <span style="white-space:nowrap;">vue panoramique sur la vallée</span><br>à deux pas de Saint-Guilhem-le-Désert et à&nbsp;35&nbsp;min de Montpellier. Conciergerie sur&nbsp;place.</p>
+    <div class="badges">
+      <div class="badge-item"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>Accueil en personne</div>
+      <div class="badge-item"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>Conciergerie dédiée</div>
+      <div class="badge-item"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4.5 12.5c1-1 2.5-1 3.5 0s2.5 1 3.5 0 2.5-1 3.5 0 2.5 1 3.5 0"></path><path d="M4.5 16.5c1-1 2.5-1 3.5 0s2.5 1 3.5 0 2.5-1 3.5 0 2.5 1 3.5 0"></path><circle cx="8" cy="8" r="1.5"></circle><circle cx="16" cy="8" r="1.5"></circle><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2"></path></svg>Animaux autorisés</div>
+    </div>
+    <div class="hero-bottom" style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:2rem;margin-top:1rem;">
+      <div class="hero-cta" style="margin-top:0;">
+        <a class="btn btn-gold" href="https://www.airbnb.fr/rooms/1521744503764002885" target="_blank" rel="noopener">Réserver sur Airbnb →</a>
+        <a class="btn btn-outline" href="#contact" data-fr="Économiser 10%" data-en="Save 10%">Économiser 10%</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hstat"><b>10</b>voyageurs</div>
+        <div class="hstat"><b>3</b>chambres</div>
+        <div class="hstat"><b>3000&nbsp;m²</b>de terrain clos</div>
+        <div class="hstat"><b>07/2026</b>Rénovation</div>
+      </div>
+    </div>
+  </div>
+  <span class="photo-credit" style="position:absolute;right:6vw;bottom:0.5rem;font-family:var(--mono);font-size:0.62rem;letter-spacing:0.06em;color:rgba(255,255,255,0.55);text-transform:uppercase;">Photo avant rénovation</span>
+  <div class="scroll-cue"><div class="line"></div>DÉFILER</div>
+</section>
+
+<section class="map-section" id="villa">
+  <div class="wrap reveal">
+    <div class="eyebrow">Situation</div>
+    <h2 style="font-size:clamp(1.8rem,3.2vw,2.4rem);font-weight:400;color:var(--pine-950);max-width:28ch;margin-bottom:2rem;">Tout est à portée de route :<br><span style="font-size:0.75em;font-weight:300;color:var(--pine-800);">Villages, Sites Historiques,<br>Paysages Magnifiques et Vignobles.</span></h2>
+    <a href="https://www.google.com/maps/place/Villa+Pioch+des+Pins/@43.6807226,3.5879782,896m/data=!3m2!1e3!4b1!4m6!3m5!1s0x12b1577fcb4a4547:0xc45966f49eb37aa2!8m2!3d43.6807187!4d3.5905531!16s%2Fg%2F11nv9p8zq1?entry=ttu&amp;g_ep=EgoyMDI2MDgxNi4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener" style="display:block;">
+      <img src="images/carte-environs.png" alt="Carte des environs — Villa Pioch des Pins" style="width:100%;height:auto;max-height:500px;object-fit:cover;border-radius:4px;box-shadow:0 2px 16px rgba(0,0,0,0.08);">
+    </a>
+    <p style="margin-top:0.6rem;font-size:0.78rem;"><a href="https://www.google.com/maps/place/Villa+Pioch+des+Pins/@43.6807226,3.5879782,896m/data=!3m2!1e3!4b1!4m6!3m5!1s0x12b1577fcb4a4547:0xc45966f49eb37aa2!8m2!3d43.6807187!4d3.5905531!16s%2Fg%2F11nv9p8zq1?entry=ttu&amp;g_ep=EgoyMDI2MDgxNi4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener" style="color:var(--gold-600);">🗺️ Ouvrir la carte interactive →</a></p>
+  </div>
+</section>
+
+<section class="intro">
+  <div class="wrap">
+    <div class="intro-grid reveal">
+      <div><div class="eyebrow">La villa</div><h2>Le calme d'une villa cachée dans la pinède, à quelques minutes du village.</h2></div>
+      <div class="intro-text">
+        <p>Cette grande villa de deux étages offre un séjour paisible pour toute la famille, dans un écrin de verdure à l'écart de l'agitation, hors lotissement. Rénovée en juillet 2026, elle est accessible de plain-pied depuis le jardin.</p>
+        <p>Au rez-de-chaussée : un vaste séjour (télévision, accès Prime Video et Disney+), plusieurs canapés dont un convertible, une grande cuisine entièrement équipée, et une suite parentale climatisée avec lit de 160 cm et salle de bain privative. À l'étage, deux chambres supplémentaires climatisées, partageant une salle de bain.</p>
+        <p>L'ensemble du logement est pensé pour les familles avec enfants et adolescents. Lit bébé, chaise haute, table à langer et barrière de lit sont fournis. Draps, serviettes et produits d'accueil sont inclus.</p>
+      </div>
+    </div>
+    <div class="gallery-grid reveal">
+      <img class="g1" src="images/Photo%20Airbnb_Int_Salon_01.png" alt="Séjour spacieux">
+      <img class="g2" src="images/Photo%20Airbnb_Int_Salon_05.png" alt="Espace salon">
+      <img class="g3" src="images/Photo%20Airbnb_Int_Salon_03.png" alt="Coin salon">
+      <img class="g4" src="images/Photo%20Airbnb_Int_Cuisine_01.png" alt="Cuisine équipée">
+      <img class="g5" src="images/Photo%20Airbnb_Int_Salon_04.png" alt="Vue séjour">
+    </div>
+  </div>
+</section>
+
+<section class="rooms">
+  <div class="wrap reveal">
+    <div class="eyebrow">Où dormir</div>
+    <h2 style="font-size:clamp(1.8rem,3.2vw,2.4rem);font-weight:400;color:var(--pine-950);max-width:30ch;">Trois chambres climatisées, jusqu'à 10 couchages pour toute la famille.</h2>
+    <p style="margin-top:1rem;font-size:0.9rem;color:var(--pine-800);font-weight:300;">3 lits doubles · 1 lit simple · 2 lits superposés · 1 canapé convertible · 1 canapé lit 1 place</p>
+    <div class="room-list">
+      <div class="room-row">
+        <div class="room-num">Chambre 01<br>RDC</div>
+        <div class="room-imgs">
+          <img src="images/Photo%20Airbnb_Int_Chambre_02_rdc_01.png" alt="Chambre 1 – RDC">
+          <img src="images/Photo%20Airbnb_Int_Chambre_02_rdc_02.png" alt="Chambre 1 – RDC vue 2">
+        </div>
+        <div>
+          <h3>Suite parentale (RDC)</h3>
+          <p>Lit double 160 cm, climatisée, salle de bain privative avec baignoire. Accès direct à la terrasse et à la piscine.</p>
+        </div>
+      </div>
+      <div class="room-row">
+        <div class="room-num">SDB<br>RDC</div>
+        <div class="room-imgs">
+          <img src="images/Photo%20Airbnb_Int_SDB_02_rdc_01.png" alt="Salle de bain RDC" style="width:100%;">
+        </div>
+        <div>
+          <h3>Salle de bain privative (RDC)</h3>
+          <p>Attenante à la suite parentale. Douche, baignoire et lavabo double vasque.</p>
+        </div>
+      </div>
+      <div class="room-row">
+        <div class="room-num">Chambre 02<br>Étage</div>
+        <div class="room-imgs">
+          <img src="images/Photo%20Airbnb_Int_Chambre_01_Etage_01.png" alt="Chambre 2 – Étage">
+          <img src="images/Photo%20Airbnb_Int_Chambre_01_Etage_02.png" alt="Chambre 2 – Étage vue 2">
+        </div>
+        <div>
+          <h3>Chambre à l'étage avec terrasse</h3>
+          <p>Lit double 140 cm + lits superposés, climatisée, terrasse privative. Salle de bain partagée avec la chambre 3.</p>
+        </div>
+      </div>
+      <div class="room-row">
+        <div class="room-num">Chambre 03<br>Étage</div>
+        <div class="room-imgs">
+          <img src="images/Photo%20Airbnb_Int_Chambre_03_Etage_01.png" alt="Chambre 3 – Étage">
+          <img src="images/Photo%20Airbnb_Int_Chambre_03_Etage_02.png" alt="Chambre 3 – Étage vue 2">
+        </div>
+        <div>
+          <h3>Chambre à l'étage</h3>
+          <p>Lit double 140 cm + lit simple, climatisée. Salle de bain partagée avec la chambre 2.</p>
+        </div>
+      </div>
+      <div class="room-row">
+        <div class="room-num">SDB<br>Étage</div>
+        <div class="room-imgs">
+          <img src="images/Photo%20Airbnb_Int_SDB_01_Etage_01.png" alt="Salle de bain étage" style="width:100%;">
+        </div>
+        <div>
+          <h3>Salle de bain de l'étage</h3>
+          <p>Partagée par les chambres 2 et 3. Douche, lavabo et toilettes.</p>
+        </div>
+      </div>
+    </div></div>
+  
+</section>
+
+<section class="jardin" id="jardin">
+  <div class="wrap reveal">
+    <div class="eyebrow">Le jardin · 6000 m²</div>
+    <h2>Un écrin de nature, rien que pour vous.</h2>
+    <p class="jardin-desc">Imaginez 6000 m² de terrain dont <strong>3000 m² entièrement clos</strong>, nichés entre pins centenaires, oliviers<br>et garrigue odorante. Un vrai cocon de verdure où chacun trouve son espace.</p>
+    <p class="jardin-desc" style="margin-top:1rem;">Côté détente : une <strong>piscine sécurisée</strong> avec portillon (surveillable depuis la terrasse),<br>une grande terrasse ombragée avec plancha, et un pool house couvert pour les loisirs.</p>
+    <p class="jardin-desc" style="margin-top:1rem;">Côté activités : <strong>ping-pong, fléchettes, pétanque, trampoline et panier de basket</strong><br>de quoi passer des journées entières dehors sans jamais s'ennuyer, pour les petits comme pour les grands.</p>
+    <p class="jardin-desc" style="margin-top:1rem;">Et parce qu'on sait qu'ils font partie de la famille : <strong>les animaux sont les bienvenus</strong>.<br>Le jardin clos leur offre un espace de liberté en toute sécurité.</p>
+    <div class="ext-grid">
+      <img class="ext-wide" src="images/Photo%20Airbnb_Ext_03.png" alt="Vue panoramique">
+      <img src="images/Photo%20Airbnb_Ext_04.png" alt="Piscine de jour">
+      <img src="images/Photo%20Airbnb_Ext_05.png" alt="Terrasse">
+      <img src="images/Photo%20Airbnb_Ext_06.png" alt="Jardin">
+      <img class="ext-wide" src="images/Photo%20Airbnb_Ext_07.png" alt="Espace extérieur">
+      <img src="images/Photo%20Airbnb_Ext_08.png" alt="Allées">
+      <img src="images/Photo%20Airbnb_Ext_09.png" alt="Oliviers">
+      <img src="images/Photo%20Airbnb_Ext_10.png" alt="Pool house">
+      <div class="ext-divider">☽ Ambiance de nuit</div>
+      <img class="ext-wide" src="images/Photo%20Airbnb_Ext_02.png" alt="Piscine illuminée">
+      <img src="images/Photo%20Airbnb_Ext_11.png" alt="Piscine bleue nuit">
+      <img src="images/Photo%20Airbnb_Ext_12.png" alt="Ambiance nocturne">
+      <img class="ext-wide" src="images/Photo%20Airbnb_Ext_13.png" alt="Villa éclairée">
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--gold-500);text-align:center;padding:3.5rem 0;">
+  <div class="wrap">
+    <h2 style="font-size:clamp(1.6rem,3vw,2.2rem);font-weight:400;color:var(--pine-950);margin:0;">Séduit ? Vérifiez les disponibilités.</h2>
+    <a class="btn" style="margin-top:1.5rem;background:var(--pine-950);color:#fff;border-color:var(--pine-950);" href="https://www.airbnb.fr/rooms/1521744503764002885" target="_blank" rel="noopener">Voir le calendrier →</a>
+  </div>
+</section>
+
+<section class="equipements" id="equipements">
+  <div class="wrap reveal">
+    <div class="eyebrow">Équipements et services</div>
+    <h2 style="font-size:clamp(1.8rem,3.2vw,2.4rem);font-weight:400;color:var(--pine-950);max-width:26ch;">Tout est prévu pour votre séjour.</h2>
+    <div class="equip-grid">
+      <div class="equip-group"><h3>🏠 Confort intérieur</h3><ul><li>Wi-Fi haut débit</li><li>Climatisation (3 chambres)</li><li>TV avec Prime Video &amp; Disney+</li><li>Canapé convertible</li><li>Canapé lit 1 place</li><li>Ventilateurs</li></ul></div>
+      <div class="equip-group"><h3>🍳 Cuisine</h3><ul><li>Cuisine entièrement équipée</li><li>Lave-vaisselle</li><li>Four, micro-ondes</li><li>Cafetière &amp; bouilloire</li><li>Réfrigérateur-congélateur</li></ul></div>
+      <div class="equip-group"><h3>🌿 Extérieur &amp; loisirs</h3><ul><li>Piscine sécurisée (portillon)</li><li>Terrasse avec plancha</li><li>Pool house couvert</li><li>Trampoline</li><li>Ping-pong, fléchettes &amp; pétanque</li><li>Panier de basket</li></ul></div>
+      <div class="equip-group"><h3>👶 Famille</h3><ul><li>Lit bébé</li><li>Chaise haute</li><li>Table à langer</li><li>Barrière de lit</li><li>Jeux de société et jeux pour enfants</li><li>Livres</li></ul></div>
+      <div class="equip-group"><h3>🧺 Linge &amp; entretien</h3><ul><li>Draps &amp; serviettes fournis</li><li>Produits d'accueil</li><li>Lave-linge</li><li>Fer à repasser</li><li>Aspirateur</li></ul></div>
+      <div class="equip-group"><h3>🚗 Pratique</h3><ul><li>Parking privé fermé</li><li>Borne de recharge EV dans le garage (option)</li><li>Terrain clos · animaux acceptés</li><li>Terrain 6000 m²</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section class="around" id="visiter">
+  <div class="wrap reveal">
+    <div class="eyebrow">À visiter</div>
+    <h2 style="font-size:clamp(1.8rem,3.2vw,2.4rem);font-weight:400;color:var(--pine-950);max-width:24ch;">Au cœur du Hérault, entre rivière, gorges et villages classés.</h2>
+    <div class="around-grid">
+      <div class="around-cell"><div class="dist">15 min</div><h3><a href="https://www.herault-tourisme.com/fr/decouvrir/nos-incontournables/saint-guilhem-le-desert/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;border-bottom:1px solid var(--line);">Saint-Guilhem-le-Désert</a></h3><p>Village classé parmi les plus beaux de France.</p></div>
+      <div class="around-cell"><div class="dist">15 min</div><h3><a href="https://www.tourisme-occitanie.com/destinations/incontournables/gorges-herault/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;border-bottom:1px solid var(--line);">Gorges de l'Hérault</a></h3><p>Baignades, canoë et randonnées.</p></div>
+      <div class="around-cell"><div class="dist">20 min</div><h3><a href="https://www.clamouse.com/fr/accueil/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;border-bottom:1px solid var(--line);">Grotte de Clamouse</a></h3><p>Une des plus belles grottes d'Europe.</p></div>
+      <div class="around-cell"><div class="dist">35 min</div><h3><a href="https://www.destination-salagou.fr/le-lac-du-salagou" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;border-bottom:1px solid var(--line);">Lac du Salagou</a></h3><p>Paysages volcaniques et baignade.</p></div>
+      <div class="around-cell"><div class="dist">35 min</div><h3><a href="https://www.montpellier-tourisme.fr/decouvrir/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;border-bottom:1px solid var(--line);">Montpellier</a></h3><p>Centre historique, gare TGV, aéroport.</p></div>
+      <div class="around-cell"><div class="dist">45 min</div><h3><a href="https://www.montpellier-tourisme.fr/decouvrir/au-coeur-de-la-nature/cote-mer-les-plages/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;border-bottom:1px solid var(--line);">Plages</a></h3><p>Littoral méditerranéen à moins d'une heure.</p></div>
+      <div class="around-cell"><div class="dist">10 min</div><h3><a href="https://mairie-saintjeandefos.fr/tourisme/histoire-du-village/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;border-bottom:1px solid var(--line);">Saint-Jean-de-Fos</a></h3><p>Village de potiers et artisanat local.</p></div>
+      <div class="around-cell"><div class="dist">40 min</div><h3><a href="https://www.cirquenavacelles.com/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;border-bottom:1px solid var(--line);">Cirque de Navacelles</a></h3><p>Grand Site de France spectaculaire.</p></div>
+    </div>
+    <div class="around-gallery">
+      <img src="images/Lieu_touristique_01_Saint_Guilhem_le_Desert_01.png" alt="Saint-Guilhem-le-Désert">
+      <img src="images/Lieu_touristique_01_Saint_Guilhem_le_Desert_02.png" alt="Ruelles de Saint-Guilhem">
+      <img src="images/Lieu_touristique_02_Pont_Du_Diable_01.png" alt="Pont du Diable">
+    </div>
+  </div>
+</section>
+
+<section class="reviews" id="avis">
+  <div class="wrap reveal">
+    <div class="review-head"><div><div class="eyebrow">Ce qu'en disent nos hôtes</div><h2>Un accueil et un cadre unanimement salués.</h2></div><div class="rating-badge"><b>5.0</b>sur 5 · Airbnb</div></div>
+    <div class="review-grid">
+      <div class="review-card"><div class="stars">★★★★★</div><p>Logement conforme et propre, sans vis-à-vis. Très appréciable en famille. Amandine est très réactive.</p><span style="display:block;margin-top:0.8rem;font-family:var(--mono);font-size:0.72rem;color:var(--gold-300);">Avis Airbnb · 2026</span></div>
+      <div class="review-card"><div class="stars">★★★★★</div><p>2 semaines merveilleuses. Très belle maison, piscine magnifique, cuisine immense. Les climatiseurs étaient excellents. Communication rapide avec Delphine, cadre magnifique.</p><span style="display:block;margin-top:0.8rem;font-family:var(--mono);font-size:0.72rem;color:var(--gold-300);">Avis Airbnb · été 2026</span></div>
+      <div class="review-card"><div class="stars">★★★★★</div><p>Quelle pépite pour ce week-end de juillet ! Prix défiant toute concurrence. Merci à Delphine pour l'accueil et à Amandine pour cette magnifique demeure !</p><span style="display:block;margin-top:0.8rem;font-family:var(--mono);font-size:0.72rem;color:var(--gold-300);">Avis Airbnb · juillet 2026</span></div>
+    </div>
+    <p style="margin-top:2.5rem;text-align:center;"><a href="https://www.airbnb.fr/rooms/1521744503764002885/reviews" target="_blank" rel="noopener" style="font-family:var(--mono);font-size:0.78rem;letter-spacing:0.06em;color:var(--gold-300);border-bottom:1px solid var(--gold-300);padding-bottom:2px;">Voir tous les avis sur Airbnb →</a></p>
+  </div>
+</section>
+
+<section class="contact-section" id="contact">
+  <div class="wrap reveal">
+    <div class="eyebrow" style="color:var(--pine-950);justify-content:center;">Réservation directe</div>
+    <h2>Quand on loue en direct, tout va mieux.</h2>
+    <p style="max-width:52ch;margin:1rem auto 0;">Pas de commission, pas de support à étages. Vous parlez directement avec nous, et on s'arrange.</p>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;margin-top:3rem;text-align:left;max-width:900px;margin-left:auto;margin-right:auto;">
+      <div style="padding:2.2rem;background:#fff;border-radius:6px;box-shadow:0 2px 12px rgba(30,42,25,0.06);">
+        <h3 style="font-family:var(--display);font-size:1.25rem;color:var(--pine-950);font-weight:500;margin-bottom:0.8rem;">Économisez 10%</h3>
+        <p style="font-size:0.92rem;color:var(--pine-800);font-weight:300;line-height:1.6;">Sans commission Airbnb, la même semaine coûte moins cher. L'économie va dans votre poche.</p>
+      </div>
+      <div style="padding:2.2rem;background:#fff;border-radius:6px;box-shadow:0 2px 12px rgba(30,42,25,0.06);">
+        <h3 style="font-family:var(--display);font-size:1.25rem;color:var(--pine-950);font-weight:500;margin-bottom:0.8rem;">Nous répondons en direct</h3>
+        <p style="font-size:0.92rem;color:var(--pine-800);font-weight:300;line-height:1.6;">Téléphone ou email — vous parlez directement avec nous, en français. Pas de chatbot, une vraie réponse rapide.</p>
+      </div>
+      <div style="padding:2.2rem;background:#fff;border-radius:6px;box-shadow:0 2px 12px rgba(30,42,25,0.06);">
+        <h3 style="font-family:var(--display);font-size:1.25rem;color:var(--pine-950);font-weight:500;margin-bottom:0.8rem;">Séjour sur mesure</h3>
+        <p style="font-size:0.92rem;color:var(--pine-800);font-weight:300;line-height:1.6;">Week-end court, semaine complète, arrivée décalée — nos dates sont flexibles. Voyons cela ensemble.</p>
+      </div>
+    </div>
+    <div style="display:flex;gap:2rem;justify-content:center;flex-wrap:wrap;margin-top:2.5rem;">
+      <div class="contact-card" style="margin-top:0;">
+        <div class="contact-name" style="display:flex;align-items:center;gap:0.8rem;"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="color:var(--gold-500);flex-shrink:0;"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>Delphine Pagano</div>
+        <div style="font-size:0.78rem;color:var(--gold-600);font-family:var(--mono);margin-bottom:0.8rem;">Conciergerie</div>
+        <div class="contact-details">
+          <a href="tel:+33645062581" class="contact-line"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>06 45 06 25 81</a>
+          <a href="mailto:villapiochdespins@gmail.com" class="contact-line"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>villapiochdespins@gmail.com</a>
+        </div>
+      </div>
+      <div class="contact-card" style="margin-top:0;">
+        <div class="contact-name" style="display:flex;align-items:center;gap:0.8rem;"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="color:var(--gold-500);flex-shrink:0;"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>Amandine</div>
+        <div style="font-size:0.78rem;color:var(--gold-600);font-family:var(--mono);margin-bottom:0.8rem;">Propriétaires</div>
+        <div class="contact-details">
+          <a href="tel:+33625091681" class="contact-line"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>06 25 09 16 81</a>
+          <a href="mailto:villapiochdespins@gmail.com" class="contact-line"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>villapiochdespins@gmail.com</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer role="contentinfo">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div><h3>Villa Pioch des Pins</h3><p>Une villa avec piscine sur les hauteurs d'Aniane,<br>dans l'Hérault. Rénovée en juillet 2026.</p></div>
+      <div><div class="foot-label">Réserver</div><a class="footlink" href="https://www.airbnb.fr/rooms/1521744503764002885" target="_blank" rel="noopener">Annonce Airbnb ↗</a><a class="footlink" href="#contact">Réservation directe ↗</a></div>
+      <div><div class="foot-label">Situation</div><p style="margin-top:0;">Aniane, Hérault (34)<br>Occitanie, France</p></div>
+    </div>
+    <div class="foot-bottom"><span>© 2026 Villa Pioch des Pins</span><span>LMNP · Merino</span></div>
+  </div>
+</footer>
+
+
+<div class="lightbox" id="lightbox">
+  <span class="lightbox-close">×</span>
+  <img id="lightbox-img" src="" alt="Vue agrandie">
+</div>
+
+<script>
+var header=document.getElementById('siteHeader');
+window.addEventListener('scroll',function(){header.classList.toggle('scrolled',window.scrollY>40);});
+var burger=document.getElementById('burger');
+var nav=document.getElementById('nav');
+var overlay=document.getElementById('navOverlay');
+burger.addEventListener('click',function(){
+  var isOpen=nav.classList.toggle('open');
+  overlay.classList.toggle('active',isOpen);
+  document.body.classList.toggle('nav-open',isOpen);
+});
+overlay.addEventListener('click',function(){
+  nav.classList.remove('open');
+  overlay.classList.remove('active');
+  document.body.classList.remove('nav-open');
+});
+var links=nav.querySelectorAll('a');
+for(var i=0;i<links.length;i++){links[i].addEventListener('click',function(){nav.classList.remove('open');overlay.classList.remove('active');document.body.classList.remove('nav-open');});}
+var io=new IntersectionObserver(function(entries){for(var j=0;j<entries.length;j++){if(entries[j].isIntersecting){entries[j].target.classList.add('in');io.unobserve(entries[j].target);}}},{threshold:0.15});
+var revealEls=document.querySelectorAll('.reveal');
+for(var k=0;k<revealEls.length;k++){io.observe(revealEls[k]);}
+if(window.matchMedia('(prefers-reduced-motion: reduce)').matches){for(var m=0;m<revealEls.length;m++){revealEls[m].classList.add('in');}}
+var lb=document.getElementById('lightbox');
+var lbi=document.getElementById('lightbox-img');
+if(lb&&lbi){
+  var allImgs=document.querySelectorAll('.gallery-grid img,.room-imgs img,.ext-grid img,.around-gallery img');
+  for(var z=0;z<allImgs.length;z++){
+    allImgs[z].style.cursor='zoom-in';
+    allImgs[z].onclick=function(){lbi.src=this.src;lb.style.display='flex';};
+  }
+  lb.onclick=function(){lb.style.display='none';};
+}
+
+// Language switcher - full site translation
+var currentLang='fr';
+var langBtn=document.getElementById('langToggle');
+var frContent={};
+var enTranslations={
+  // Hero
+  'Aniane · Hérault · Occitanie':'Aniane · Hérault · Occitania',
+  'Une villa sur les hauteurs,':'A villa on the heights,',
+  'entre pins et garrigue':'among pines and garrigue',
+  'Piscine privée, grand jardin clos et vue panoramique sur la vallée':'Private pool, large fenced garden and panoramic valley views',
+  'à deux pas de Saint-Guilhem-le-Désert et à 35 min de Montpellier. Conciergerie sur place.':'minutes from Saint-Guilhem-le-Désert, 35 min from Montpellier. On-site concierge.',
+  'Accueil en personne':'In-person welcome',
+  'Conciergerie dédiée':'Dedicated concierge',
+  'Animaux autorisés':'Pets welcome',
+  'Réserver sur Airbnb →':'Book on Airbnb →',
+  'Découvrir la villa':'Discover the villa',
+  'voyageurs':'guests','chambres':'bedrooms','de terrain clos':'fenced land','Rénovation':'Renovated',
+  // Nav
+  'La villa':'The villa','Le jardin':'The garden','Équipements':'Amenities',
+  'À visiter':'Explore','Avis':'Reviews','Contact':'Contact',
+  'Vérifier les disponibilités':'Check availability',
+  // Map
+  'Situation':'Location',
+  'Tout est à portée de route :':'Everything is within easy reach:',
+  'Villages, Sites Historiques,<br>Paysages Magnifiques et Vignobles.':'Villages, Historic Sites, Stunning Landscapes and Vineyards.',
+  'Ouvrir la carte interactive →':'Open interactive map →',
+  // Villa
+  'La villa':'The villa',
+  'Le calme d\'une villa cachée dans la pinède, à quelques minutes du village.':'A quiet villa hidden among the pines, minutes from the village.',
+  'Cette grande villa de deux étages offre un séjour paisible pour toute la famille, dans un écrin de verdure à l\'écart de l\'agitation, hors lotissement. Rénovée en juillet 2026, elle est accessible de plain-pied depuis le jardin.':'This large two-storey villa offers a peaceful stay for the whole family, nestled in greenery away from the hustle, outside any housing estate. Renovated in July 2026, it is accessible at ground level from the garden.',
+  'Au rez-de-chaussée : un vaste séjour (télévision, accès Prime Video et Disney+), plusieurs canapés dont un convertible, une grande cuisine entièrement équipée, et une suite parentale climatisée avec lit de 160 cm et salle de bain privative. À l\'étage, deux chambres supplémentaires climatisées, partageant une salle de bain.':'Ground floor: a large living room (TV, Prime Video & Disney+), several sofas including a sofa bed, a fully equipped kitchen, and an air-conditioned master suite with 160 cm bed and private bathroom. Upstairs, two additional air-conditioned bedrooms sharing a bathroom.',
+  'L\'ensemble du logement est pensé pour les familles avec enfants et adolescents. Lit bébé, chaise haute, table à langer et barrière de lit sont fournis. Draps, serviettes et produits d\'accueil sont inclus.':'The entire property is designed for families with children and teenagers. Baby cot, high chair, changing table and bed rail are provided. Bed linen, towels and welcome products are included.',
+  // Rooms
+  'Où dormir':'Where to sleep',
+  'Trois chambres climatisées, jusqu\'à 10 couchages pour toute la famille.':'Three air-conditioned bedrooms, up to 10 guests for the whole family.',
+  '3 lits doubles · 1 lit simple · 2 lits superposés · 1 canapé convertible · 1 canapé lit 1 place':'3 double beds · 1 single bed · 2 bunk beds · 1 sofa bed · 1 single sofa bed',
+  'Suite parentale (RDC)':'Master suite (ground floor)',
+  'Lit double 160 cm, climatisée, salle de bain privative avec baignoire. Accès direct à la terrasse et à la piscine.':'160 cm double bed, air-conditioned, private bathroom with bathtub. Direct access to the terrace and pool.',
+  'Salle de bain privative (RDC)':'Private bathroom (ground floor)',
+  'Attenante à la suite parentale. Douche, baignoire et lavabo double vasque.':'Adjacent to the master suite. Shower, bathtub and double basin vanity.',
+  'Chambre à l\'étage avec terrasse':'Upstairs bedroom with terrace',
+  'Lit double 140 cm + lits superposés, climatisée, terrasse privative. Salle de bain partagée avec la chambre 3.':'140 cm double bed + bunk beds, air-conditioned, private terrace. Bathroom shared with bedroom 3.',
+  'Chambre à l\'étage':'Upstairs bedroom',
+  'Lit double 140 cm + lit simple, climatisée. Salle de bain partagée avec la chambre 2.':'140 cm double bed + single bed, air-conditioned. Bathroom shared with bedroom 2.',
+  'Salle de bain de l\'étage':'Upstairs bathroom',
+  'Partagée par les chambres 2 et 3. Douche, lavabo et toilettes.':'Shared by bedrooms 2 and 3. Shower, basin and toilet.',
+  // Jardin
+  'Le jardin · 6000 m²':'The garden · 6000 m²',
+  'Un écrin de nature, rien que pour vous.':'A haven of nature, just for you.',
+  '☽ Ambiance de nuit':'☽ Night atmosphere',
+  // Equipements
+  'Équipements et services':'Amenities & services',
+  'Tout est prévu pour votre séjour.':'Everything is ready for your stay.',
+  'Confort intérieur':'Indoor comfort','Cuisine':'Kitchen','Extérieur & loisirs':'Outdoor & leisure',
+  'Famille':'Family','Linge & entretien':'Laundry & housekeeping','Pratique':'Practical',
+  'Wi-Fi haut débit':'High-speed Wi-Fi','Climatisation (3 chambres)':'Air conditioning (3 bedrooms)',
+  'TV avec Prime Video & Disney+':'TV with Prime Video & Disney+',
+  'Ventilateurs':'Fans',
+  'Cuisine entièrement équipée':'Fully equipped kitchen','Lave-vaisselle':'Dishwasher',
+  'Four, micro-ondes':'Oven, microwave','Cafetière & bouilloire':'Coffee maker & kettle',
+  'Réfrigérateur-congélateur':'Fridge-freezer',
+  'Piscine sécurisée (portillon)':'Secured pool (gate)','Terrasse avec plancha':'Terrace with plancha grill',
+  'Pool house couvert':'Covered pool house','Trampoline et panier de basket':'Trampoline and basketball hoop',
+  'Ping-pong, fléchettes & pétanque':'Table tennis, darts & pétanque',
+  'Lit bébé':'Baby cot','Chaise haute':'High chair','Table à langer':'Changing table',
+  'Barrière de lit':'Bed rail','Jeux de société et jeux pour enfants':'Board games and children\'s games',
+  'Draps & serviettes fournis':'Bed linen & towels provided','Produits d\'accueil':'Welcome products',
+  'Lave-linge':'Washing machine','Fer à repasser':'Iron','Aspirateur':'Vacuum cleaner',
+  'Parking privé fermé':'Private enclosed parking',
+  'Borne de recharge EV dans le garage (option)':'EV charging station in garage (optional)',
+  'Terrain clos · animaux acceptés':'Fenced land · pets welcome','Terrain 6000 m²':'6000 m² land',
+  // Around
+  'Au cœur du Hérault, entre rivière, gorges et villages classés.':'In the heart of Hérault — rivers, gorges and heritage villages.',
+  'Saint-Guilhem-le-Désert':'Saint-Guilhem-le-Désert',
+  'Village classé parmi les plus beaux de France.':'Ranked among the most beautiful villages in France.',
+  'Gorges de l\'Hérault':'Hérault Gorges','Baignades, canoë et randonnées.':'Swimming, canoeing and hiking.',
+  'Grotte de Clamouse':'Clamouse Cave','Une des plus belles grottes d\'Europe.':'One of Europe\'s finest caves.',
+  'Lac du Salagou':'Lake Salagou','Paysages volcaniques et baignade.':'Volcanic landscapes and swimming.',
+  'Montpellier':'Montpellier','Centre historique, gare TGV, aéroport.':'Historic centre, TGV station, airport.',
+  'Plages':'Beaches','Littoral méditerranéen à moins d\'une heure.':'Mediterranean coast under an hour away.',
+  'Saint-Jean-de-Fos':'Saint-Jean-de-Fos','Village de potiers et artisanat local.':'Potters\' village and local crafts.',
+  'Cirque de Navacelles':'Cirque de Navacelles','Grand Site de France spectaculaire.':'Spectacular Grand Site de France.',
+  // Reviews
+  'Ce qu\'en disent nos hôtes':'What our guests say',
+  'Un accueil et un cadre unanimement salués.':'A welcome and setting unanimously praised.',
+  // Contact
+  'Réservation directe':'Direct booking',
+  'Quand on loue en direct, tout va mieux.':'When you book direct, everything is better.',
+  'Économisez 10%':'Save 10%',
+  'Sans commission Airbnb, la même semaine coûte moins cher. L\'économie va dans votre poche.':'Without Airbnb commission, the same week costs less. The savings go in your pocket.',
+  'Nous répondons en direct':'We respond directly',
+  'Téléphone ou email — vous parlez directement avec nous, en français. Pas de chatbot, une vraie réponse rapide.':'Phone or email — you speak directly with us. No chatbot, a real quick response.',
+  'Séjour sur mesure':'Tailored stays',
+  'Week-end court, semaine complète, arrivée décalée — nos dates sont flexibles. Voyons cela ensemble.':'Short weekend, full week, flexible check-in — our dates are flexible. Let\'s work it out together.',
+  'Propriétaires':'Owners','Conciergerie':'Concierge',
+  // CTA
+  'Séduit ? Vérifiez les disponibilités.':'Convinced? Check availability.',
+  'Voir le calendrier →':'View calendar →',
+'Voir tous les avis sur Airbnb →':'See all reviews on Airbnb →',
+'Canapé convertible':'Sofa bed',
+'Canapé lit 1 place':'Single sofa bed',
+'Panier de basket':'Basketball hoop',
+'Livres':'Books',
+'Pas de commission, pas de support à étages. Vous parlez directement avec nous, et on s\'arrange.':'No commission, no layers of support. You speak directly with us, and we work it out.',
+'Photo avant rénovation':'Photo before renovation',
+'🗺️ Ouvrir la carte interactive →':'🗺️ Open interactive map →',
+'Chambre 01':'Bedroom 01',
+'Chambre 02':'Bedroom 02',
+'Chambre 03':'Bedroom 03',
+'RDC':'Ground floor',
+'Étage':'Upstairs',
+'SDB':'Bathroom',
+'🏠 Confort intérieur':'🏠 Indoor comfort',
+'🍳 Cuisine':'🍳 Kitchen',
+'🌿 Extérieur & loisirs':'🌿 Outdoor & leisure',
+'👶 Famille':'👶 Family',
+'🧺 Linge & entretien':'🧺 Laundry & housekeeping',
+'🚗 Pratique':'🚗 Practical',
+'Photo avant rénovation':'Photo before renovation',
+'🗺️ Ouvrir la carte interactive →':'🗺️ Open interactive map →',
+'Chambre 01':'Bedroom 01',
+'Chambre 02':'Bedroom 02',
+'Chambre 03':'Bedroom 03',
+'RDC':'Ground floor',
+'Étage':'Upstairs',
+'SDB':'Bathroom',
+'🏠 Confort intérieur':'🏠 Indoor comfort',
+'🍳 Cuisine':'🍳 Kitchen',
+'🌿 Extérieur & loisirs':'🌿 Outdoor & leisure',
+'👶 Famille':'👶 Family',
+'🧺 Linge & entretien':'🧺 Laundry & housekeeping',
+'🚗 Pratique':'🚗 Practical',
+  // Footer
+  'Réserver':'Book','Annonce Airbnb ↗':'Airbnb listing ↗','Réservation directe ↗':'Direct booking ↗',
+  'Une villa avec piscine sur les hauteurs d\'Aniane,':'A villa with pool in the hills of Aniane,',
+  'dans l\'Hérault. Rénovée en juillet 2026.':'in Hérault. Renovated July 2026.',
+'Imaginez 6000 m² de terrain dont':'Imagine 6000 m² of land including',
+'3000 m² entièrement clos':'3000 m² fully fenced',
+', nichés entre pins centenaires, oliviers':' nestled among centuries-old pines, olive trees',
+'et garrigue odorante. Un vrai cocon de verdure où chacun trouve son espace.':'and fragrant garrigue. A true haven of greenery where everyone finds their space.',
+'Côté détente : une':'Relaxation side: a',
+'piscine sécurisée':'secured pool',
+'avec portillon (surveillable depuis la terrasse),':'with gate (visible from the terrace),',
+'une grande terrasse ombragée avec plancha, et un pool house couvert pour les loisirs.':'a large shaded terrace with plancha grill, and a covered pool house for leisure.',
+'Côté activités :':'Activities:',
+'ping-pong, fléchettes, pétanque, trampoline et panier de basket':'table tennis, darts, pétanque, trampoline and basketball hoop',
+'de quoi passer des journées entières dehors sans jamais s\'ennuyer, pour les petits comme pour les grands.':'enough to spend whole days outdoors without getting bored, for kids and adults alike.',
+'Et parce qu\'on sait qu\'ils font partie de la famille :':'And because we know they are part of the family:',
+'les animaux sont les bienvenus':'pets are welcome',
+'.\nLe jardin clos leur offre un espace de liberté en toute sécurité.':'The fenced garden gives them a safe space to roam freely.',
+'Le jardin clos leur offre un espace de liberté en toute sécurité.':'The fenced garden gives them a safe space to roam freely.',
+'Piscine privée, grand jardin clos et':'Private pool, large fenced garden and',
+'vue panoramique sur la vallée':'panoramic valley views',
+'Villages, Sites Historiques,':'Villages, Historic Sites,',
+'Paysages Magnifiques et Vignobles.':'Stunning Landscapes and Vineyards.',
+'Économiser 10%':'Save 10%',
+'à deux pas de Saint-Guilhem-le-Désert et à 35 min de Montpellier. Conciergerie sur place.':'Minutes from Saint-Guilhem-le-Désert, 35 min from Montpellier. On-site concierge.'
+};
+// Build reverse map
+var frTranslations={};
+for(var key in enTranslations){frTranslations[enTranslations[key]]=key;}
+
+if(langBtn){
+  langBtn.addEventListener('click',function(){
+    var toLang=(currentLang==='fr')?'en':'fr';
+    var map=(toLang==='en')?enTranslations:frTranslations;
+    langBtn.textContent=(toLang==='fr')?'EN':'FR';
+    // Translate all leaf text nodes
+    var walk=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT,null,false);
+    var node,nodes=[];
+    while(node=walk.nextNode()){nodes.push(node);}
+    for(var i=0;i<nodes.length;i++){
+      var n=nodes[i];
+      var t=n.textContent.trim();
+      if(t.length>0&&map[t]){
+        n.textContent=n.textContent.replace(t,map[t]);
+      }
+    }
+    currentLang=toLang;
+  });
+}
+</script>
+
+</body></html>
